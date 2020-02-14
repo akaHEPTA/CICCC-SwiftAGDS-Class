@@ -14,6 +14,9 @@
 		9C6F819023F37624004DF85C /* String+DPStringTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6F818F23F37624004DF85C /* String+DPStringTool.swift */; };
 		9C79D7A523F4A7EF00370767 /* ExhaustiveSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C79D7A423F4A7EF00370767 /* ExhaustiveSearch.swift */; };
 		9C92441823F5FFF60088733B /* Evaluate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92441723F5FFF60088733B /* Evaluate.swift */; };
+		9C92441E23F602480088733B /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92441B23F602480088733B /* Queue.swift */; };
+		9C92441F23F602480088733B /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92441C23F602480088733B /* Stack.swift */; };
+		9C92442023F602480088733B /* Bag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92441D23F602480088733B /* Bag.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,6 +41,9 @@
 		9C6F819123F37BF4004DF85C /* story.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = story.txt; sourceTree = "<group>"; };
 		9C79D7A423F4A7EF00370767 /* ExhaustiveSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExhaustiveSearch.swift; sourceTree = "<group>"; };
 		9C92441723F5FFF60088733B /* Evaluate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Evaluate.swift; sourceTree = "<group>"; };
+		9C92441B23F602480088733B /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		9C92441C23F602480088733B /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		9C92441D23F602480088733B /* Bag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bag.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,11 +76,12 @@
 		9C35127B23F21FFA0082D3B7 /* SwiftAlgorithmsDataStructures */ = {
 			isa = PBXGroup;
 			children = (
-				9C6F818F23F37624004DF85C /* String+DPStringTool.swift */,
+				9C92441923F601FF0088733B /* Assignments */,
 				9C79D7A323F4A7D700370767 /* ExhaustiveSearch */,
 				9C6F818C23F3708D004DF85C /* Recursion */,
 				9C35128323F220580082D3B7 /* SearchingSorting */,
 				9C35127C23F21FFA0082D3B7 /* main.swift */,
+				9C6F818F23F37624004DF85C /* String+DPStringTool.swift */,
 			);
 			path = SwiftAlgorithmsDataStructures;
 			sourceTree = "<group>";
@@ -93,7 +100,6 @@
 			children = (
 				9C6F818D23F3709C004DF85C /* Recursion.swift */,
 				9C6F819123F37BF4004DF85C /* story.txt */,
-				9C92441723F5FFF60088733B /* Evaluate.swift */,
 			);
 			path = Recursion;
 			sourceTree = "<group>";
@@ -104,6 +110,25 @@
 				9C79D7A423F4A7EF00370767 /* ExhaustiveSearch.swift */,
 			);
 			path = ExhaustiveSearch;
+			sourceTree = "<group>";
+		};
+		9C92441923F601FF0088733B /* Assignments */ = {
+			isa = PBXGroup;
+			children = (
+				9C92441723F5FFF60088733B /* Evaluate.swift */,
+				9C92441A23F602200088733B /* DataStructures */,
+			);
+			path = Assignments;
+			sourceTree = "<group>";
+		};
+		9C92441A23F602200088733B /* DataStructures */ = {
+			isa = PBXGroup;
+			children = (
+				9C92441D23F602480088733B /* Bag.swift */,
+				9C92441B23F602480088733B /* Queue.swift */,
+				9C92441C23F602480088733B /* Stack.swift */,
+			);
+			path = DataStructures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,9 +189,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C92442023F602480088733B /* Bag.swift in Sources */,
 				9C6F818E23F3709C004DF85C /* Recursion.swift in Sources */,
+				9C92441F23F602480088733B /* Stack.swift in Sources */,
 				9C6F819023F37624004DF85C /* String+DPStringTool.swift in Sources */,
 				9C35128523F220820082D3B7 /* Searching.swift in Sources */,
+				9C92441E23F602480088733B /* Queue.swift in Sources */,
 				9C79D7A523F4A7EF00370767 /* ExhaustiveSearch.swift in Sources */,
 				9C35127D23F21FFA0082D3B7 /* main.swift in Sources */,
 				9C92441823F5FFF60088733B /* Evaluate.swift in Sources */,
