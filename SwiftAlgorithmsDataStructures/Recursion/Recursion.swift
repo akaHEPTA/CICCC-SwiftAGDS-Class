@@ -50,10 +50,10 @@ func printBinary(_ num: Int) {
 // - Print all lines in reverse order (recursion) from a text file
 // - You can change the function header if you want.
 
-func reverseLines(_ line: Int) {
-    let content = try? String(contentsOfFile: "/Users/Ricky/Workspace/XcodeProjects/SwiftAlgorithmsDataStructures/SwiftAlgorithmsDataStructures/Recursion/story.txt", encoding: .utf8)
-    //    let lines = content?.split(separator: "\n")
-    
-}
+//func reverseLines(_ line: Int) {
+//    let content = try? String(contentsOfFile: "/Users/Ricky/Workspace/XcodeProjects/SwiftAlgorithmsDataStructures/SwiftAlgorithmsDataStructures/Recursion/story.txt", encoding: .utf8)
+//    //    let lines = content?.split(separator: "\n")
+//    
+//}
 
 
