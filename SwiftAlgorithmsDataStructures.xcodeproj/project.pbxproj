@@ -23,6 +23,8 @@
 		9C92441F23F602480088733B /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92441C23F602480088733B /* Stack.swift */; };
 		9C92442023F602480088733B /* Bag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92441D23F602480088733B /* Bag.swift */; };
 		9C95188D2407182200966026 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C95188C2407182200966026 /* Graph.swift */; };
+		9C95188F24071F4B00966026 /* UF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C95188E24071F4B00966026 /* UF.swift */; };
+		9C9518912407456900966026 /* ConnectedComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9518902407456900966026 /* ConnectedComponents.swift */; };
 		9CA1C4D02404A3DF0049A609 /* BFS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1C4CF2404A3DF0049A609 /* BFS.swift */; };
 		9CFFF56023F74DDE0018DB8C /* Backtracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFFF55F23F74DDE0018DB8C /* Backtracking.swift */; };
 		9CFFF56223F756160018DB8C /* Evaluate2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFFF56123F756160018DB8C /* Evaluate2.swift */; };
@@ -59,6 +61,8 @@
 		9C92441C23F602480088733B /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		9C92441D23F602480088733B /* Bag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bag.swift; sourceTree = "<group>"; };
 		9C95188C2407182200966026 /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
+		9C95188E24071F4B00966026 /* UF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UF.swift; sourceTree = "<group>"; };
+		9C9518902407456900966026 /* ConnectedComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectedComponents.swift; sourceTree = "<group>"; };
 		9CA1C4CF2404A3DF0049A609 /* BFS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFS.swift; sourceTree = "<group>"; };
 		9CFFF55F23F74DDE0018DB8C /* Backtracking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Backtracking.swift; path = SwiftAlgorithmsDataStructures/Backtracking/Backtracking.swift; sourceTree = SOURCE_ROOT; };
 		9CFFF56123F756160018DB8C /* Evaluate2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Evaluate2.swift; sourceTree = "<group>"; };
@@ -157,6 +161,7 @@
 				9CFFF56123F756160018DB8C /* Evaluate2.swift */,
 				9C92441A23F602200088733B /* DataStructures */,
 				9C7E12182406527C009BE040 /* LCA.swift */,
+				9C95188E24071F4B00966026 /* UF.swift */,
 			);
 			path = Assignments;
 			sourceTree = "<group>";
@@ -178,6 +183,7 @@
 				9C17718A2405C779004B26C2 /* DFS.swift */,
 				9C17718E2405D097004B26C2 /* BipartiteGraph.swift */,
 				9C95188C2407182200966026 /* Graph.swift */,
+				9C9518902407456900966026 /* ConnectedComponents.swift */,
 			);
 			path = Graph;
 			sourceTree = "<group>";
@@ -257,6 +263,7 @@
 				9C35128523F220820082D3B7 /* Searching.swift in Sources */,
 				9C17718F2405D097004B26C2 /* BipartiteGraph.swift in Sources */,
 				9C92441E23F602480088733B /* Queue.swift in Sources */,
+				9C9518912407456900966026 /* ConnectedComponents.swift in Sources */,
 				9C79D7A523F4A7EF00370767 /* ExhaustiveSearch.swift in Sources */,
 				9CFFF56223F756160018DB8C /* Evaluate2.swift in Sources */,
 				9CFFF56023F74DDE0018DB8C /* Backtracking.swift in Sources */,
@@ -267,6 +274,7 @@
 				9C35128723F228480082D3B7 /* Sorting.swift in Sources */,
 				9C7E12192406527C009BE040 /* LCA.swift in Sources */,
 				9C95188D2407182200966026 /* Graph.swift in Sources */,
+				9C95188F24071F4B00966026 /* UF.swift in Sources */,
 				9CA1C4D02404A3DF0049A609 /* BFS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

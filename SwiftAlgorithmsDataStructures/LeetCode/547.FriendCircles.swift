@@ -10,25 +10,37 @@ import Foundation
 
 class Solution {
     func findCircleNum(_ M: [[Int]]) -> Int {
-        var adjList = M
-        var visited = Array(repeating: false, count: M.count)
+        var adjList = [[Int]](repeating: [], count: M.count)
+        var parent = [Int](repeating: 0, count: M.count), count = 0
+        var visited = [Bool](repeating: false, count: M.count)
         
-        var count = 0
         for i in 0..<M.count {
-            if !visited[i] {
-                dfs(start: i, visited: &visited, adjList: &adjList)
-                count += 1
+            for j in i..<M[i].count {
+                if i != j && M[i][j] == 1 {
+                    adjList[i].append(j)
+                    adjList[j].append(i)
+                }
             }
         }
+        
+        func dfs(start: Int, visited: inout [Bool], adjList: inout [[Int]]) {
+            for j in 0..<adjList[start].count {
+                if adjList[start][j] == 1 && !visited[j] {
+                    visited[start] = true
+                    count += 1
+                    dfs(start: j, visited: &visited, adjList: &adjList)
+                }
+            }
+        }
+        
+        // setting parent as itself (every node is root)
+        //        for i in 0..<adjList.count { parent[i] = i }
+        for i in 0..<adjList.count {
+            dfs(start: i, visited: &visited, adjList: &adjList)
+        }
+        
         return count
     }
     
-    func dfs(start: Int, visited: inout [Bool], adjList: inout [[Int]]) {
-        visited[start] = true
-        for i in adjList[start] {
-            if !visited[i] {
-                dfs(start: i, visited: &visited, adjList: &adjList)
-            }
-        }
-    }
 }
+

@@ -53,5 +53,27 @@ import Foundation
 
 //treeTraversal()
 
+//lcaHelper()
 
-lcaHelper()
+//var uf = UF(10)
+//
+//uf.union(4, 3)
+//uf.union(3, 8)
+//uf.union(6, 5)
+//uf.union(9, 4)
+//uf.union(2, 1)
+//
+//print(uf.connected(0, 7))
+//print(uf.connected(8, 9))
+//
+//uf.union(5, 0)
+//uf.union(7, 2)
+//uf.union(6, 1)
+//uf.union(7, 3)
+//
+//print(uf.connected(0, 7))
+//
+//
+
+let s = Solution()
+print(s.findCircleNum([[1, 1, 0], [1, 1, 0], [0, 0, 1]]))
