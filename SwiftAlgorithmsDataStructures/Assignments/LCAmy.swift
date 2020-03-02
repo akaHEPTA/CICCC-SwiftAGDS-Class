@@ -14,42 +14,43 @@ func lcaHelper() {
     var visited = [Bool](repeating: false, count: size + 1)
     var depth = [Int](repeating: 0, count: size + 1)
     var parent = [Int](repeating: 0, count: size + 1)
-    let queue = Queue<Int>()
     
-    for _ in 1..<size {
-        let line = readLine()!.split(separator: " ")
-        var a = Int(line[0])!, b = Int(line[1])!
-        if a > b { swap(&a, &b) }
+    for _ in 0..<size-1 {
+        let line = readLine()!.split(separator: " ").map{ Int($0)! }
+        var a = line[0], b = line[1]
         nAryTree[a].append(b)
         nAryTree[b].append(a)
-        parent[b] = a
-        depth[b] = depth[a] + 1
     }
     
-    queue.enqueue(item: 1) // starting from vertex 1
+    // starting from vertex 1
     depth[1] = 1
+    parent[1] = 1
     visited[1] = true
+    let queue = Queue<Int>()
+    queue.enqueue(item: 1)
     
     while !queue.isEmpty() {
         let first = queue.dequeue()!
         
-        for i in 1..<nAryTree.count {
+        for i in nAryTree[first] {
             if !visited[i] {
+                depth[i] = depth[first] + 1
                 queue.enqueue(item: i)
                 visited[i] = true
+                parent[i] = first
             }
         }
     }
     
     func lca(_ a: Int, _ b: Int) -> Int {
         var a = a, b = b
+        
+        if depth[a] < depth[b] {
+            swap(&a, &b)
+        }
+        
         while depth[a] != depth[b] {
-            if depth[a] > depth[b] {
-                a = parent[a]
-            }
-            else {
-                b = parent[b]
-            }
+            a = parent[a]
         }
         
         if a == b {
@@ -64,11 +65,12 @@ func lcaHelper() {
         return parent[a]
     }
     
-    let questions = Int(readLine()!)!
-    for _ in 0..<questions {
-        let line = readLine()!.split(separator: " ")
-        let a = Int(line[0])!, b = Int(line[1])!
+    var questions = Int(readLine()!)!
+    while questions > 0 {
+        let line = readLine()!.split(separator: " ").map{ Int($0)! }
+        let a = line[0], b = line[1]
         print(lca(a, b))
+        questions -= 1
     }
     
     return

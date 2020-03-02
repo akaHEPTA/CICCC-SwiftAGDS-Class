@@ -21,12 +21,14 @@
 		9C6F818E23F3709C004DF85C /* Recursion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6F818D23F3709C004DF85C /* Recursion.swift */; };
 		9C6F819023F37624004DF85C /* String+DPStringTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6F818F23F37624004DF85C /* String+DPStringTool.swift */; };
 		9C79D7A523F4A7EF00370767 /* ExhaustiveSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C79D7A423F4A7EF00370767 /* ExhaustiveSearch.swift */; };
-		9C7E12192406527C009BE040 /* LCA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7E12182406527C009BE040 /* LCA.swift */; };
+		9C7E12192406527C009BE040 /* LCAmy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7E12182406527C009BE040 /* LCAmy.swift */; };
 		9C92441823F5FFF60088733B /* Evaluate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92441723F5FFF60088733B /* Evaluate.swift */; };
 		9C95188D2407182200966026 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C95188C2407182200966026 /* Graph.swift */; };
 		9C95188F24071F4B00966026 /* UF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C95188E24071F4B00966026 /* UF.swift */; };
 		9C9518912407456900966026 /* ConnectedComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9518902407456900966026 /* ConnectedComponents.swift */; };
 		9CA1C4D02404A3DF0049A609 /* BFS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1C4CF2404A3DF0049A609 /* BFS.swift */; };
+		9CCA9277240DB77C00AB1F00 /* LCALazy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCA9276240DB77C00AB1F00 /* LCALazy.swift */; };
+		9CCA9279240DB7B600AB1F00 /* LCADP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCA9278240DB7B600AB1F00 /* LCADP.swift */; };
 		9CE859B324087C440080B4AC /* FloodFill2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE859B224087C440080B4AC /* FloodFill2.swift */; };
 		9CE859B62408963F0080B4AC /* DepthFirstSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE859B42408963F0080B4AC /* DepthFirstSearch.swift */; };
 		9CE859B72408963F0080B4AC /* BreadthFirstSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE859B52408963F0080B4AC /* BreadthFirstSearch.swift */; };
@@ -64,12 +66,14 @@
 		9C6F818F23F37624004DF85C /* String+DPStringTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+DPStringTool.swift"; sourceTree = "<group>"; };
 		9C6F819123F37BF4004DF85C /* story.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = story.txt; sourceTree = "<group>"; };
 		9C79D7A423F4A7EF00370767 /* ExhaustiveSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExhaustiveSearch.swift; sourceTree = "<group>"; };
-		9C7E12182406527C009BE040 /* LCA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCA.swift; sourceTree = "<group>"; };
+		9C7E12182406527C009BE040 /* LCAmy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCAmy.swift; sourceTree = "<group>"; };
 		9C92441723F5FFF60088733B /* Evaluate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Evaluate.swift; sourceTree = "<group>"; };
 		9C95188C2407182200966026 /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
 		9C95188E24071F4B00966026 /* UF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UF.swift; sourceTree = "<group>"; };
 		9C9518902407456900966026 /* ConnectedComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectedComponents.swift; sourceTree = "<group>"; };
 		9CA1C4CF2404A3DF0049A609 /* BFS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFS.swift; sourceTree = "<group>"; };
+		9CCA9276240DB77C00AB1F00 /* LCALazy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCALazy.swift; sourceTree = "<group>"; };
+		9CCA9278240DB7B600AB1F00 /* LCADP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCADP.swift; sourceTree = "<group>"; };
 		9CE859B224087C440080B4AC /* FloodFill2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloodFill2.swift; sourceTree = "<group>"; };
 		9CE859B42408963F0080B4AC /* DepthFirstSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepthFirstSearch.swift; sourceTree = "<group>"; };
 		9CE859B52408963F0080B4AC /* BreadthFirstSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreadthFirstSearch.swift; sourceTree = "<group>"; };
@@ -180,8 +184,10 @@
 				9CE859B8240896620080B4AC /* RealSushi.swift */,
 				9C92441723F5FFF60088733B /* Evaluate.swift */,
 				9CFFF56123F756160018DB8C /* Evaluate2.swift */,
-				9C7E12182406527C009BE040 /* LCA.swift */,
+				9C7E12182406527C009BE040 /* LCAmy.swift */,
 				9C95188E24071F4B00966026 /* UF.swift */,
+				9CCA9276240DB77C00AB1F00 /* LCALazy.swift */,
+				9CCA9278240DB7B600AB1F00 /* LCADP.swift */,
 			);
 			path = Assignments;
 			sourceTree = "<group>";
@@ -279,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C1771922405EB67004B26C2 /* 547.FriendCircles.swift in Sources */,
+				9CCA9277240DB77C00AB1F00 /* LCALazy.swift in Sources */,
 				9C6F818E23F3709C004DF85C /* Recursion.swift in Sources */,
 				9C6F819023F37624004DF85C /* String+DPStringTool.swift in Sources */,
 				9C0828E324084390007C201B /* Queue.swift in Sources */,
@@ -295,9 +302,10 @@
 				9C59BC6223FDE43A0040FB5C /* TreeTraversal.swift in Sources */,
 				9C92441823F5FFF60088733B /* Evaluate.swift in Sources */,
 				9CE859B9240896620080B4AC /* RealSushi.swift in Sources */,
+				9CCA9279240DB7B600AB1F00 /* LCADP.swift in Sources */,
 				9C35128723F228480082D3B7 /* Sorting.swift in Sources */,
 				9CE859B324087C440080B4AC /* FloodFill2.swift in Sources */,
-				9C7E12192406527C009BE040 /* LCA.swift in Sources */,
+				9C7E12192406527C009BE040 /* LCAmy.swift in Sources */,
 				9C0828DD240841A7007C201B /* Error+CustomErrors.swift in Sources */,
 				9C0828E224084390007C201B /* Bag.swift in Sources */,
 				9C0828E124084390007C201B /* Stack.swift in Sources */,

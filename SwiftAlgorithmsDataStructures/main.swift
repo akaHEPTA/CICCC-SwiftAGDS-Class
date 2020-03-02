@@ -53,7 +53,7 @@ import Foundation
 
 //treeTraversal()
 
-//lcaHelper()
+lcaHelper()
 
 //var uf = UF(10)
 //
